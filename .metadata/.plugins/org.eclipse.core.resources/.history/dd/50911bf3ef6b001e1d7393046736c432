@@ -1,0 +1,6 @@
+package com.javacode.piller;
+
+public class Abstractex {
+public void abstract data();
+public abstract info();
+}

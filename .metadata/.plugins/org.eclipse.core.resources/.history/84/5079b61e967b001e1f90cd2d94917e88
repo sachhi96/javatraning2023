@@ -1,0 +1,13 @@
+package com.javacode.java8pr;
+
+import java.util.function.Consumer;
+
+public class Consumerex {
+	public static void main(String[] args) {
+		Consumer<String> f = (String s) -> {
+
+		};
+		f.accept("jai");
+		System.out.println(f);
+	}
+}

@@ -1,0 +1,18 @@
+package com.javacode.java8pr;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.List;
+
+public class StreamNew2 {
+	public static void main(String[] args) {
+		List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David", "Emma");
+
+		// Filter names starting with 'A', convert to uppercase, and collect into a list
+		List<String> result = names.stream().filter(name -> name.startsWith("A")).map(String::toUpperCase)
+				.collect(Collectors.toList());
+
+		// Print the result
+		System.out.println(result);
+	}
+}

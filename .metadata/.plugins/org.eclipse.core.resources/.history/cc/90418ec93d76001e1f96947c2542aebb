@@ -1,0 +1,10 @@
+package com.javacode.thread;
+
+public class Threadex2 {
+public static void main(String[] args) throws InterruptedException {
+	Threadex t=new Threadex();
+	t.start();
+	Thread.sleep(2000);
+	
+}
+}

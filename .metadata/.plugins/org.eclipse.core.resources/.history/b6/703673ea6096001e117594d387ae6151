@@ -1,0 +1,17 @@
+package com.spring1.restapiex1.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring1.restapiex1.config.RestTempleteconfig1;
+
+@Service
+public class RestService2 {
+	@Autowired
+	public final RestTempleteconfig1 resttempleteconfig1;
+
+	public RestService2(RestTempleteconfig1 resttempleteconfig1) {
+		this.resttempleteconfig1 = resttempleteconfig1;
+	}
+
+}

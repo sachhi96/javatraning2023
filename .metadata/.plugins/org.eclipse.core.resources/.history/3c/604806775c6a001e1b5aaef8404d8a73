@@ -1,0 +1,7 @@
+package com.javacode.basic;
+
+public class Exmple1 {
+public static void main(String[] args) {
+	System.out.println("hello world");
+}
+}

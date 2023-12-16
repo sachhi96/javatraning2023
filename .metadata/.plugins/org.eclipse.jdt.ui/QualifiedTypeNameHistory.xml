@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.springbootex.springproject1.bean.Employee"/>
+    <fullyQualifiedTypeName name="com.springbootex.springproject1.dao.EmployeeDAO"/>
+    <fullyQualifiedTypeName name="com.springbootex.springproject1.service.EmplyService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.springbootex2.springproject3.bean.Customer"/>
+    <fullyQualifiedTypeName name="com.springbootex2.springproject3.dao.CustomerDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.springbootex2.springproject3.service.Customerservice"/>
+</qualifiedTypeNameHistroy>

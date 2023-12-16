@@ -1,0 +1,22 @@
+package com.javacode.collection;
+
+import java.util.HashMap;
+
+public class HashMappr {
+	public static void main(String[] args) {
+		HashMap<String, Integer> m = new HashMap<>();
+		m.put("Sachin", 1996);
+		m.put("Sinchu", 1998);
+		m.put("x", 1998);
+
+		System.out.println(m);
+		int SachinM = m.get("Sachin");
+		System.out.println("Sachin's m: " + SachinM);
+		m.remove("x", 1998);
+		System.out.println(m);
+
+		boolean containsX2 = m.containsValue("X2");
+		System.out.println(containsX2);
+	}
+
+}

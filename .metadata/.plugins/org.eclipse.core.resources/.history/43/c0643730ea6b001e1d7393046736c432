@@ -1,0 +1,8 @@
+package com.javacode.piller;
+
+public class Car extends Vehical {
+	public void engin() {
+		System.out.println("power full engine");
+	}
+
+}

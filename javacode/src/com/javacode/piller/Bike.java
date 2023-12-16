@@ -1,0 +1,14 @@
+package com.javacode.piller;
+
+public class Bike extends Vehical {
+	public void r15() {
+		System.out.println("r15 bike");
+	}
+
+	public static void main(String[] args) {
+		Bike b = new Bike();
+		b.breaks();
+		b.r15();
+		b.tire();
+	}
+}

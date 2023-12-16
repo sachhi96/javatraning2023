@@ -1,0 +1,14 @@
+package com.javacode.threadpr;
+
+public class Runthread4 {
+	public static void main(String[] args) throws InterruptedException {
+		Runthread3 m = new Runthread3();
+		Thread s = new Thread();
+		s.start();
+		for (int i = 0; i <= 7; i++) {
+			System.out.println("Manger also late");
+			Thread.sleep(2000);
+		}
+	}
+
+}

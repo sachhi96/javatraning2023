@@ -1,0 +1,45 @@
+package com.springbootex1.springproject2.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springbootex1.springproject2.bean.User;
+import com.springbootex1.springproject2.dao.UserDAO;
+@Service
+public class Userserviceimpl implements Userservice {
+
+	@Autowired // create to reference of interface
+	UserDAO userdao;
+
+	@Override
+	public User adduser(User u) {
+		// TODO Auto-generated method stub
+		return userdao.save(u);
+	}
+
+	@Override
+	public List<User> getuser() {
+		// TODO Auto-generated method stub
+		return userdao.findAll();
+	}
+
+	@Override
+	public String dltuser(int userID) {
+		userdao.deleteById(userID);
+		// TODO Auto-generated method stub
+		return "Delete succesfully";
+	}
+
+	@Override
+	public User updateuser(User u) {
+		User us = userdao.findById(u.getUserID()).orElse(null);
+		us.setName(u.getName());
+		us.setAge(u.getAge());
+		us.setAddress(u.getAddress());
+		// TODO Auto-generated method stub
+		return userdao.save(us);
+	}
+
+}

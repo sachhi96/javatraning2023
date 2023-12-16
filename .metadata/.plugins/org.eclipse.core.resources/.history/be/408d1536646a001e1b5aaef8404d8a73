@@ -1,0 +1,9 @@
+package com.javacode.basic;
+
+public class veriable {
+int a=10;//global 
+public void hello(int b)//
+{
+System.out.println(a+b);
+
+}}

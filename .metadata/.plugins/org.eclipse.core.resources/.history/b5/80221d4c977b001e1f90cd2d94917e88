@@ -1,0 +1,8 @@
+package com.javacode.java8pr;
+
+import java.util.function.Predicate;
+
+public class Predicatepr {
+	Predicate<Integer> t = num -> num % 2 == 0;
+
+}

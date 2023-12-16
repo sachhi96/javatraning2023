@@ -1,0 +1,8 @@
+package com.javacode.piller;
+
+public class Bike {
+	public void r15(){
+		System.out.println("r15 bike");
+	}
+
+}

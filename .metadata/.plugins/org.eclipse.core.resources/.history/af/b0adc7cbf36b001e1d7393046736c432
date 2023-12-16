@@ -1,0 +1,7 @@
+package com.javacode.piller;
+
+public abstract class Abstractex {
+public abstract void data(); 
+public abstract void feature();	
+
+}

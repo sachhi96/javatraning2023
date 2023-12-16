@@ -1,0 +1,13 @@
+package com.javacode.threadpr;
+
+public class Runthread4 {
+	public static void main(String[] args) {
+		Runthread3 m = new Runthread3();
+		Thread s = new Thread(m);
+		s.start();
+		for (int i = 0; i <= 7; i++) {
+			System.out.println("Manger also late");
+		}
+	}
+
+}

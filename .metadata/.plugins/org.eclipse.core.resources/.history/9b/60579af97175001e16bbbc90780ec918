@@ -1,0 +1,19 @@
+package com.javacode.expction;
+
+public class Expetion01 {
+	public static void main(String[] args) {
+		int num[] = { 1, 2, 3, 4, 5 };
+		try {
+
+			num[6] = 50;
+
+			System.out.println(num);
+		} catch (ArithmeticException e) {
+			System.out.println("you cannot divied by zero");
+		}
+
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("cont div by 0");
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package com.spring.restapiex.config;
+
+import org.springframework.context.annotation.Bean;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration // it is used reading all properties of the file application.perporties
+public class Resttemplteconfig {
+	@Bean // its like component we r providing one task,it is insisted ,perform the task
+			// complete the task
+			// and then destroy
+	public RestTemplate resttemplate() {
+		return new RestTemplate();
+
+	}
+}

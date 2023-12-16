@@ -1,0 +1,9 @@
+package com.javacode.thread;
+
+public class Threadex2 {
+public static void main(String[] args) {
+	Threadex t=new Threadex();
+	t.start();
+	
+}
+}

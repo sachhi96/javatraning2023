@@ -1,0 +1,8 @@
+package com.javacode.threadpr;
+
+public class Runthread6 {
+	public static void main(String[] args) {
+		Runthread5 y = new Runthread5();
+		Thread r = new Thread(y);
+	}
+}

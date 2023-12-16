@@ -1,0 +1,50 @@
+package com.springbootex1.springproject2.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springbootex1.springproject2.bean.User;
+import com.springbootex1.springproject2.service.Userservice;
+
+@RestController // combination of responcr body and @controller
+public class Usercontroller {
+	@Autowired
+	Userservice userservice;
+
+	@PostMapping("/user")
+	public User adduser(@RequestBody User u) {
+		return userservice.adduser(u);
+	}
+
+	@GetMapping("/getuser")
+	public List<User> getuser() {
+		return userservice.getuser();
+	}
+
+	@PutMapping("/updateuser")
+	public User updateuser(@RequestBody User u) {
+		return userservice.updateuser(u);
+
+	}
+
+	@DeleteMapping("/deleteuser/{userID}")
+	public String dltuser(@PathVariable int userID) {
+		userservice.dltuser(userID);
+		return "delete succfully";
+	}
+
+	@GetMapping("/getbyuser/{userID}")
+	public Optional<User> getbyuser(@PathVariable int userID) {
+		return userservice.getbyuser(userID);
+
+	}
+}

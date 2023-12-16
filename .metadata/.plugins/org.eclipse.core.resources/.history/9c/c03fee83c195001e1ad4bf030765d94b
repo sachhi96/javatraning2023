@@ -1,0 +1,35 @@
+package com.spring.restapiex.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class RestService {
+	@Autowired
+	public final RestTemplate resttemplate;
+
+	public RestService(RestTemplate resttemplate) {
+		this.resttemplate = resttemplate;
+	}
+
+	public String getbydiffURL() {
+		String url = "http://localhost:8083/getuser";
+		String responce = resttemplate.getForObject(url, String.class);
+		return responce;
+
+	}
+
+	public String getbydiffURL1() {
+		String url = "http://localhost:8088/getmovie";
+		String responce1 = resttemplate.getForObject(url, String.class);
+		return responce1;
+
+	}
+	public String getbydiffURL2() {
+		String url = "http://localhost:80882/getemployee";
+		String responce2 = resttemplate.getForObject(url, String.class);
+		return responce2;
+
+	}
+}

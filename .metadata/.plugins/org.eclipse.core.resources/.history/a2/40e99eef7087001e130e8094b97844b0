@@ -1,0 +1,31 @@
+package com.javacode.piller;
+
+import java.util.Scanner;
+
+public class Constuctorex {
+	public Constuctorex() {
+		System.out.println("default ");// default constructor
+	}
+
+	public Constuctorex(int a) {
+		System.out.println("singleparam constoctor");// without void return type
+	}
+
+	public Constuctorex(int a, int b) {
+		System.out.println("doubleparam cons " + b + " , " + a);
+	}
+
+	public static void main(String[] args) {
+		/*
+		 * Scanner d = new Scanner(System.in); System.out.println("enter value"); int a
+		 * = d.nextInt(); int b = d.nextInt();
+		 */
+		
+		Constuctorex x = new Constuctorex();
+		Constuctorex y = new Constuctorex();
+		Constuctorex z = new Constuctorex();
+		
+		
+
+	}
+}

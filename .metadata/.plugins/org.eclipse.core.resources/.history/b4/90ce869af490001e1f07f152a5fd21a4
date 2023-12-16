@@ -1,0 +1,45 @@
+package com.springbootex.springproject1.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springbootex.springproject1.bean.Employee;
+import com.springbootex.springproject1.dao.EmployeeDAO;
+
+@Service
+public class Emplyserviceimpl implements EmplyService {// add unimplemented method
+
+	@Autowired
+	EmployeeDAO employeedao;
+
+	@Override
+	public Employee addemployee(Employee e) {
+
+		// TODO Auto-generated method stub
+		return employeedao.save(e);
+	}
+
+	@Override
+	public List<Employee> getemployee() {
+		// TODO Auto-generated method stub
+		return employeedao.findAll();
+	}
+
+	@Override
+	public String dltemployee(int empID) {
+		// TODO Auto-generated method stub
+		return "Delete";
+	}
+
+	@Override
+	public Employee updatedemployee(Employee e) {// here we need to create object reference
+		Employee em = employeedao.findById(e.getEmpID()).orElse(null);
+		em.setEmpName(e.getEmpName());
+		em.setSalary(e.getSalary());
+		// TODO Auto-generated method stub
+		return employeedao.save(em);
+	}// add unimplemented method
+
+}

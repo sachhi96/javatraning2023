@@ -1,0 +1,11 @@
+package com.javacode.threadpr;
+
+public class Runthread3 implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}// after create class use unpimplement method (over the class name)
+
+}

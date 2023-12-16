@@ -1,0 +1,12 @@
+package com.javacode.java8pr;
+
+import java.util.function.Predicate;
+
+public class Predicatepr {
+	public static void main(String[] args) {
+
+		Predicate<Integer> t = num -> num % 2 == 0;
+		System.out.println(t.test(3));
+		System.out.println(t.test(5));
+	}
+}

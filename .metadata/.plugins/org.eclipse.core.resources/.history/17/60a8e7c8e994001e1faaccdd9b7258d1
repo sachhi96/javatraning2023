@@ -1,0 +1,43 @@
+package com.springproject4.springtbootex4.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springproject4.springtbootex4.bean.Movies;
+import com.springproject4.springtbootex4.service.Moviesservice;
+
+@RestController
+public class Moviescontroller {
+@Autowired
+Moviesservice moviesservice;
+
+@PostMapping("/movie_name")
+public Movies addmovie_name(@RequestBody Movies m) {
+	return moviesservice.addmovie_name(m);
+	
+}
+@GetMapping("/getmovie")
+public List<Movies> getmovie_name(){
+	return moviesservice.getmovie_name();
+	
+}
+@DeleteMapping("/dltmovie/{rank}")
+public String dltmovie_name(@PathVariable int rank) {
+	moviesservice.dltmovie_name(rank);
+	return "delete Movie";
+
+}
+@PutMapping("/upmovie")
+public Movies upmovie_name(@RequestBody Movies m) {
+	return moviesservice.upmovie_name(m);
+	
+}
+}
